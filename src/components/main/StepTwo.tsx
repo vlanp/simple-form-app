@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from "react";
 import Page from "../../enum/Page";
 
 const StepTwo = ({
@@ -9,7 +10,7 @@ const StepTwo = ({
   username: string;
   email: string;
   password: string;
-  setCurrentPage: Function;
+  setCurrentPage: Dispatch<SetStateAction<Page>>;
 }) => {
   return (
     <section className="step-two container">

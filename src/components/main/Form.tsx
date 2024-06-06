@@ -1,4 +1,4 @@
-import { FormEvent } from "react";
+import { Dispatch, FormEvent, SetStateAction } from "react";
 import Page from "../../enum/Page";
 
 const Form = ({
@@ -13,14 +13,14 @@ const Form = ({
   setCurrentPage,
 }: {
   username: string;
-  setUsername: Function;
+  setUsername: Dispatch<SetStateAction<string>>;
   email: string;
-  setEmail: Function;
+  setEmail: Dispatch<SetStateAction<string>>;
   password: string;
-  setPassword: Function;
+  setPassword: Dispatch<SetStateAction<string>>;
   confirmedPassword: string;
-  setConfirmedPassword: Function;
-  setCurrentPage: Function;
+  setConfirmedPassword: Dispatch<SetStateAction<string>>;
+  setCurrentPage: Dispatch<SetStateAction<Page>>;
 }) => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
