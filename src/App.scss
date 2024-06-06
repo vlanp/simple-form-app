@@ -40,13 +40,17 @@ main {
   padding: 5rem 0;
 }
 
-// MAIN - FORM
+// MAIN
 
-form {
+form,
+.step-two {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  input {
+}
+
+form {
+  input:not(.form-button) {
     background-color: $light-grey;
     border: 1px solid $grey;
     border-radius: 0.5rem;
@@ -61,36 +65,22 @@ form {
   }
 }
 
-.form-button {
+.form-button,
+.step-two button {
+  border: 1px solid $grey;
   margin-top: 2rem;
   width: 100%;
   background-color: $violet;
   color: white;
   font-size: 2.5rem;
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
   &:hover {
     cursor: pointer;
   }
 }
 
-// MAIN - STEPTWO
-
 .step-two {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  button {
-    border: 1px solid $grey;
-    margin-top: 2rem;
-    width: 100%;
-    background-color: $violet;
-    color: white;
-    font-size: 2.5rem;
-    border-radius: 0.5rem;
-    padding: 2rem 1.5rem;
-    &:hover {
-      cursor: pointer;
-    }
-  }
   > div {
     display: flex;
     flex-direction: column;

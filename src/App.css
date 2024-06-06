@@ -29,12 +29,14 @@ main {
   padding: 5rem 0;
 }
 
-form {
+form,
+.step-two {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-form input {
+
+form input:not(.form-button) {
   background-color: #fcf9f9;
   border: 1px solid #d8d8d8;
   border-radius: 0.5rem;
@@ -48,22 +50,7 @@ form > div {
   gap: 1rem;
 }
 
-.form-button {
-  margin-top: 2rem;
-  width: 100%;
-  background-color: #574dcc;
-  color: white;
-  font-size: 2.5rem;
-}
-.form-button:hover {
-  cursor: pointer;
-}
-
-.step-two {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
+.form-button,
 .step-two button {
   border: 1px solid #d8d8d8;
   margin-top: 2rem;
@@ -74,9 +61,11 @@ form > div {
   border-radius: 0.5rem;
   padding: 2rem 1.5rem;
 }
+.form-button:hover,
 .step-two button:hover {
   cursor: pointer;
 }
+
 .step-two > div {
   display: flex;
   flex-direction: column;
