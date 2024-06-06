@@ -34,6 +34,7 @@ form,
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 0 3rem;
 }
 
 form input:not(.form-button) {
@@ -81,4 +82,10 @@ footer {
 }
 footer span {
   font-weight: bold;
+}
+
+@media (width < 625px) {
+  html {
+    font-size: 50%;
+  }
 }/*# sourceMappingURL=App.css.map */
